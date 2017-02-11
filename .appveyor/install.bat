@@ -38,9 +38,9 @@ GOTO:EOF
     git checkout %OPEN_SSL_BRANCH%
     perl Configure VC-WIN32 --prefix=%BUILD_DIR%\Libraries\openssl\Release
     :: TODO this is failing
-    ::ms\do_ms
-    ::nmake -f ms\nt.mak
-    ::nmake -f ms\nt.mak install
+    ms\do_ms
+    nmake -f ms\nt.mak
+    nmake -f ms\nt.mak install
     cd ..
     dir
 
@@ -58,9 +58,8 @@ GOTO:EOF
 
 :getLZMA
     echo Get lzma sdk
-    powershell -Command "Invoke-WebRequest http://downloads.sourceforge.net/sevenzip/%LZMA_VERSION%.tar.bz2 -OutFile %LZMA_VERSION%.tar.bz2"
+    powershell -Command "Invoke-WebRequest http://7-zip.org/a/%LZMA_VERSION%.tar.bz2 -OutFile %LZMA_VERSION%.tar.bz2"
 	7z x %LZMA_VERSION%.tar.bz2
-	7z x %LZMA_VERSION%.tar
+	7z x %LZMA_VERSION%.tar -olzma
     dir
-    :: TODO Unzip lzma sdk
 GOTO:EOF
