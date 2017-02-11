@@ -12,6 +12,7 @@ git clone https://github.com/openssl/openssl.git
 cd openssl
 git checkout %OPEN_SSL_BRANCH%
 perl Configure VC-WIN32 --prefix=%BUILD_DIR%\Libraries\openssl\Release
+tree
 ms\do_ms
 nmake -f ms\nt.mak
 nmake -f ms\nt.mak install
