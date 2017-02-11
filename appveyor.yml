@@ -1,6 +1,6 @@
 image: Visual Studio 2015
 
-clone_folder: C:\TBuild
+clone_folder: C:\TBuild\tdesktop
 
 install:
   - ./.appveyor/install.bat
