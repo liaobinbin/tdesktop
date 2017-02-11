@@ -1,6 +1,6 @@
 SET BUILD_DIR=C:\TBuild
 SET OPEN_SSL_BRANCH=OpenSSL_1_0_1-stable
-SET LZMA_FILE=lzma920.tar.bz2
+SET LZMA_VERSION=lzma920
 
 call:installUtils
 call:createLibsFolder
@@ -58,7 +58,9 @@ GOTO:EOF
 
 :getLZMA
     echo Get lzma sdk
-    powershell -Command "Invoke-WebRequest http://downloads.sourceforge.net/sevenzip/%LZMA_FILE% -OutFile %LZMA_FILE%"
+    powershell -Command "Invoke-WebRequest http://downloads.sourceforge.net/sevenzip/%LZMA_VERSION%.tar.bz2 -OutFile %LZMA_VERSION%.tar.bz2"
+	7z x %LZMA_VERSION%.tar.bz2
+	7z x %LZMA_VERSION%.tar
     dir
     :: TODO Unzip lzma sdk
 GOTO:EOF
