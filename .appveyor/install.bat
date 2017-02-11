@@ -31,7 +31,8 @@ cd ..
 dir
 
 :: LZMA SDK 9.20
-curl -fsS -o %LZMA_FILE% http://downloads.sourceforge.net/sevenzip/%LZMA_FILE%
+powershell -Command "Invoke-WebRequest http://downloads.sourceforge.net/sevenzip/%LZMA_FILE% -OutFile %LZMA_FILE%"
+dir
 tar xaf %LZMA_FILE%
 :: TODO Unzip lzma sdk
 
