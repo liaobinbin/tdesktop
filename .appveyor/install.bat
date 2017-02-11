@@ -1,3 +1,4 @@
+SET BUILD_DIR=C:\TBuild
 SET OPEN_SSL_BRANCH=OpenSSL_1_0_1-stable
 SET LZMA_FILE=lzma920.tar.bz2
 
@@ -10,7 +11,7 @@ cd Libraries
 git clone https://github.com/openssl/openssl.git
 cd openssl
 git checkout %OPEN_SSL_BRANCH%
-perl Configure VC-WIN32 --prefix=D:\TBuild\Libraries\openssl\Release
+perl Configure VC-WIN32 --prefix=%BUILD_DIR%\Libraries\openssl\Release
 ms\do_ms
 nmake -f ms\nt.mak
 nmake -f ms\nt.mak install
@@ -20,7 +21,7 @@ dir
 git clone https://github.com/openssl/openssl.git openssl_debug
 cd openssl_debug
 git checkout %OPEN_SSL_BRANCH%
-perl Configure debug-VC-WIN32 --prefix=D:\TBuild\Libraries\openssl_debug\Debug
+perl Configure debug-VC-WIN32 --prefix=%BUILD_DIR%\Libraries\openssl_debug\Debug
 ms\do_ms
 nmake -f ms\nt.mak
 nmake -f ms\nt.mak install
