@@ -12,6 +12,7 @@ git clone https://github.com/openssl/openssl.git
 cd openssl
 git checkout %OPEN_SSL_BRANCH%
 perl Configure VC-WIN32 --prefix=%BUILD_DIR%\Libraries\openssl\Release
+:: TODO this is failing
 ::ms\do_ms
 ::nmake -f ms\nt.mak
 ::nmake -f ms\nt.mak install
@@ -22,9 +23,10 @@ git clone https://github.com/openssl/openssl.git openssl_debug
 cd openssl_debug
 git checkout %OPEN_SSL_BRANCH%
 perl Configure debug-VC-WIN32 --prefix=%BUILD_DIR%\Libraries\openssl_debug\Debug
-ms\do_ms
-nmake -f ms\nt.mak
-nmake -f ms\nt.mak install
+:: TODO this is failing
+::ms\do_ms
+::nmake -f ms\nt.mak
+::nmake -f ms\nt.mak install
 cd ..
 dir
 
