@@ -20,7 +20,7 @@ dir
     echo Install utils
     choco install -y curl 7zip
 
-    if not "%VSVER%" == "" call "C:\Program Files (x86)\Microsoft Visual Studio %VSVER%.0\VC\vcvarsall" x86
+    call "C:\Program Files\Microsoft SDKs\Windows\v7.1\Bin\SetEnv.cmd" /x86
     set PATH=%PATH%;"C:\Program Files\7-Zip";%TOOLSDIR%\bin
 GOTO:EOF
 
