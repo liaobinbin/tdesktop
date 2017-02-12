@@ -38,9 +38,9 @@ GOTO:EOF
     git checkout %OPEN_SSL_BRANCH%
     perl Configure VC-WIN32 --prefix=%BUILD_DIR%\Libraries\openssl\Release
     :: TODO this is failing
-    ms\do_ms
-    nmake -f ms\nt.mak
-    nmake -f ms\nt.mak install
+    call ms\do_ms
+    call nmake -f ms\nt.mak
+    call nmake -f ms\nt.mak install
     cd ..
     dir
 
