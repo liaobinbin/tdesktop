@@ -1,22 +1,3 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @liaobinbin
- Sign out
- Unwatch 1
-  Star 0
-  Fork 1,289 liaobinbin/tdesktop
-forked from telegramdesktop/tdesktop
- Code  Pull requests 0  Projects 0  Wiki  Pulse  Graphs  Settings
-Branch: master Find file Copy pathtdesktop/Telegram/Resources/langs/lang.strings
-6df0591  14 days ago
-@john-preston john-preston Langs updated with a changelog. Pinned chats reorder fixed on macOS.
-1 contributor
-RawBlameHistory    
-1082 lines (962 sloc)  54.2 KB
 /*
 This file is part of Telegram Desktop,
 the official desktop version of Telegram messaging app, see https://telegram.org
@@ -37,64 +18,64 @@ to link the code of portions of this program with the OpenSSL library.
 Full license: https://github.com/telegramdesktop/tdesktop/blob/master/LICENSE
 Copyright (c) 2014-2017 John Preston, https://desktop.telegram.org
 */
-"lng_language_name" = "English";
-"lng_switch_to_this" = "Switch to English";
+"lng_language_name" = "简体中文";
+"lng_switch_to_this" = "切换中文";
 
-"lng_menu_contacts" = "Contacts";
-"lng_menu_settings" = "Settings";
-"lng_menu_about" = "About";
-"lng_menu_update" = "Update";
-"lng_menu_restart" = "Restart";
-"lng_menu_back" = "Back";
+"lng_menu_contacts" = "联系人";
+"lng_menu_settings" = "设置";
+"lng_menu_about" = "关于";
+"lng_menu_update" = "更新";
+"lng_menu_restart" = "重启";
+"lng_menu_back" = "返回";
 
-"lng_disable_notifications_from_tray" = "Disable notifications";
-"lng_enable_notifications_from_tray" = "Enable notifications";
-"lng_open_from_tray" = "Open Telegram";
-"lng_minimize_to_tray" = "Minimize to tray";
-"lng_quit_from_tray" = "Quit Telegram";
-"lng_tray_icon_text" = "Telegram is still running here,\nyou can change this from settings page.\nIf this icon disappears from tray menu,\nyou can drag it here from hidden icons.";
+"lng_disable_notifications_from_tray" = "禁用通知";
+"lng_enable_notifications_from_tray" = "启用通知";
+"lng_open_from_tray" = "打开 Telegram";
+"lng_minimize_to_tray" = "最小化到托盘";
+"lng_quit_from_tray" = "退出 Telegram";
+"lng_tray_icon_text" = "Telegram 将会一直保持后台运行，\n你可以在该页面修改相关设置。\n如果图标从托盘菜单消失了，\n你可以从隐藏图标中拖到这里。";
 
-"lng_month1" = "January";
-"lng_month2" = "February";
-"lng_month3" = "March";
-"lng_month4" = "April";
-"lng_month5" = "May";
-"lng_month6" = "June";
-"lng_month7" = "July";
-"lng_month8" = "August";
-"lng_month9" = "September";
-"lng_month10" = "October";
-"lng_month11" = "November";
-"lng_month12" = "December";
+"lng_month1" = "一月";
+"lng_month2" = "二月";
+"lng_month3" = "三月";
+"lng_month4" = "四月";
+"lng_month5" = "五月";
+"lng_month6" = "六月";
+"lng_month7" = "七月";
+"lng_month8" = "八月";
+"lng_month9" = "九月";
+"lng_month10" = "十月";
+"lng_month11" = "十一月";
+"lng_month12" = "十二月";
 
-"lng_month1_small" = "Jan";
-"lng_month2_small" = "Feb";
-"lng_month3_small" = "Mar";
-"lng_month4_small" = "Apr";
-"lng_month5_small" = "May";
-"lng_month6_small" = "Jun";
-"lng_month7_small" = "Jul";
-"lng_month8_small" = "Aug";
-"lng_month9_small" = "Sep";
-"lng_month10_small" = "Oct";
-"lng_month11_small" = "Nov";
-"lng_month12_small" = "Dec";
+"lng_month1_small" = "一";
+"lng_month2_small" = "二";
+"lng_month3_small" = "三";
+"lng_month4_small" = "四";
+"lng_month5_small" = "五";
+"lng_month6_small" = "六";
+"lng_month7_small" = "七";
+"lng_month8_small" = "八";
+"lng_month9_small" = "九";
+"lng_month10_small" = "十";
+"lng_month11_small" = "十一";
+"lng_month12_small" = 十二";
 
-"lng_weekday1" = "Mon";
-"lng_weekday2" = "Tue";
-"lng_weekday3" = "Wed";
-"lng_weekday4" = "Thu";
-"lng_weekday5" = "Fri";
-"lng_weekday6" = "Sat";
-"lng_weekday7" = "Sun";
+"lng_weekday1" = "周一";
+"lng_weekday2" = "周二";
+"lng_weekday3" = "周三";
+"lng_weekday4" = "周四";
+"lng_weekday5" = "周五";
+"lng_weekday6" = "周六";
+"lng_weekday7" = "周日";
 
-"lng_weekday1_full" = "Monday";
-"lng_weekday2_full" = "Tuesday";
-"lng_weekday3_full" = "Wednesday";
-"lng_weekday4_full" = "Thursday";
-"lng_weekday5_full" = "Friday";
-"lng_weekday6_full" = "Saturday";
-"lng_weekday7_full" = "Sunday";
+"lng_weekday1_full" = "星期一";
+"lng_weekday2_full" = "星期二";
+"lng_weekday3_full" = "星期三";
+"lng_weekday4_full" = "星期四";
+"lng_weekday5_full" = "星期五";
+"lng_weekday6_full" = "星期六";
+"lng_weekday7_full" = "星期天";
 
 "lng_month_day" = "{month} {day}";
 "lng_month_day_year" = "{month} {day}, {year}";
@@ -102,14 +83,14 @@ Copyright (c) 2014-2017 John Preston, https://desktop.telegram.org
 
 "lng_box_ok" = "OK";
 
-"lng_cancel" = "Cancel";
-"lng_continue" = "Continue";
-"lng_close" = "Close";
-"lng_connecting" = "Connecting...";
-"lng_reconnecting" = "Reconnect {count:now|in # s|in # s}...";
-"lng_reconnecting_try_now" = "Try now";
+"lng_cancel" = "取消";
+"lng_continue" = "继续";
+"lng_close" = "关闭";
+"lng_connecting" = "连接中...";
+"lng_reconnecting" = "重新连接 {count:now|in # s|in # s}...";
+"lng_reconnecting_try_now" = "立即重试";
 
-"lng_status_service_notifications" = "service notifications";
+"lng_status_service_notifications" = "服务通知";
 "lng_status_support" = "support";
 "lng_status_bot" = "bot";
 "lng_status_bot_reads_all" = "has access to messages";
